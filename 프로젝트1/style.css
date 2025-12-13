@@ -1,0 +1,143 @@
+body {
+    background-color: #5B2386;
+}
+h1, h2 {visibility: hidden;}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin-top: 36px;
+    margin-left: 15px;
+    gap: 70px;
+}
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 297px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    width: 330px;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    width: 261px;
+    gap: 12px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header q {
+    width: 297px;
+    margin-top: 162px;
+    margin-left: 16px;
+}
+.intro p {
+    width: 290px;
+    text-align: center;
+    align-content: center;
+}
+footer p {
+    width: 261px;
+    text-align: center;
+}
+.calculator .button {
+    width: 240px;
+    padding: 20px 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.action .close {
+    width: 203px;
+    text-align: center;
+}
+.action :nth-last-child {
+    width: 102px;
+    padding: 16px 24px;
+}
+header :nth-child(2) {
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+header :nth-child(3) {
+    width: 278px;
+    margin-top: 36px;
+    position: absolute;
+}
+.intro img {
+    width: 20px;
+    height: 18px;
+}
+.intro :nth-child(2) {
+align-content: flex-start;
+}
+.intro :nth-last-child {
+    align-content: flex-end;
+}
+.calculator img {
+    width: 43px;
+}
+footer img {
+    width: 125px;
+}
+.action {
+    display: flex;
+    flex-direction: row;
+    width: 313px;
+    gap: 8px;
+}
+button {
+    background-color: #FCEE21;
+    border-radius: 12px;
+}
+.share {
+    background-color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 771px;
+        gap: 160px;
+}
+    header {
+        width: 564px;
+    }
+    .intro {
+        width: 485px;
+        gap: 20px;
+    }
+    .calculator {
+        width: 771px;
+        gap: 100px;
+    }
+    .calculator-button {
+        width: 567px;
+        padding: 20px 50px;
+        gap: 10px;
+    }
+    .result {
+        width: 663px;
+        gap: 20px;
+    }
+    main {
+        width: 771px;
+        gap: 120px;
+    }
+    footer {
+        width: 365px;
+        gap: 20px;
+    } }
