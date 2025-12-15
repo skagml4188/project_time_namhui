@@ -1,129 +1,163 @@
 body {
     background-color: #5B2386;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1, h2 {visibility: hidden;}
+h1, h2, h3 {visibility: hidden;}
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 330px;
-    margin-top: 35px;
+    margin-top: 36px;
     margin-left: 15px;
     gap: 70px;
 }
-header,
-main,
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*header*/
 header {
     width: 297px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .clock {
     justify-content: flex-start;
+    align-items: center;
     width: 128px;
-    margin-left: 74px;
+    margin-left: 10px;
     position: absolute;
 }
 .title {
     justify-content: flex-start;
+    align-items: center;
     width: 278px;
     margin-top: 36px;
     position: absolute;
 }
 .quote {
     justify-content: flex-end;
-    width: 297px;
-    margin-top: 162px;
-    margin-left: 16px;
+    align-self: center;
+    width: 100%;
+    margin-top: 100px;
     position: relative;
+/*text*/
     text-align: center;
-  font-family: "OTEnjoystoriesBA";
+    font-family: "OTEnjoystoriesBA";
     color: #F5DF4D;
     font-size: 22px;
 }
+/*intro*/
 main {
-    width: 330px;
-    gap: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*text*/
     font-family: 'GmarketSansMedium';
     color: #FFFFFF;
     font-size: 14px;
+    gap: 60px;
 }
-.right {
+.highlight {
+    width: 70%;
     justify-content: flex-start;
-    background-color: #8443B6;
-}
-.intro p {
-    width: 290px;
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    position: absolute;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(94%) saturate(1000%) hue-rotate(360deg) brightness(100%) contrast(95%);
 }
-.left {
-    justify-content: flex-end;
-    background-color: #8443B6;
+.info {
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    /*text*/
+    font-size: 18px;
+    text-align: center;
+    line-height: 100%;
+    z-index: 1;
 }
 dfn {
     font-family: 'GmarketSansBold';
 }
-output {
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    line-height: 100%;
-}
-footer {
-    width: 261px;
-    gap: 12px;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-footer p {
-    width: 261px;
-    text-align: center;
-    font-size: 12px;
-    color: #FFFFFF;
-}
-.calculator .button {
+/*calculator*/
+.goal {
+    width: 319px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
 }
-.check {
-    width: 240px;
-    padding: 20px 50px;
+.plan {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
-.action .close {
-    width: 203px;
+.time {
+    width: 298px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+input {
+    width: fit-content;
+    border-radius: 8px;
+    padding: 5px 10px;
+    gap: 10px;
+    /*text*/
+    font-family: 'GmarketSansMedium';
+    color: #BABCBE;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
     text-align: center;
+    vertical-align: middle;
 }
-.action :nth-last-child {
-    width: 102px;
-    padding: 16px 24px;
+.button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
-.intro img {
-    width: 20px;
+.check {
+    width: 200px;
+    gap: 10px;
 }
-
 .click {
     width: 43px;
+    align-items: flex-end;
 }
-.logo {
-    width: 125px;
+/*result*/
+output {
+    margin: 10px;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    vertical-align: middle;
 }
+/*action*/
 .action {
     display: flex;
     flex-direction: row;
-    width: 313px;
-    gap: 8px;
+    gap: 9px;
+}
+#show {
+    width: 70%;
     padding: 16px 24px;
+    gap: 10px;
+}
+.share {
+    width: 30%;
+    padding: 16px 24px;
+    gap: 10px;
+    background-color: #FFFFFF;
 }
 button {
     background-color: #FCEE21;
@@ -133,43 +167,24 @@ button {
     font-size: 14px;
     color: #5B2386;
 }
-.share {
-    background-color: #FFFFFF;
+/*footer*/
+footer {
+    width: 261px;
+    gap: 12px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media screen and (min-width: 992px) {
-    .container {
-        width: 771px;
-        gap: 160px;
+.logo {
+    width: 125px;
 }
-    header {
-        width: 564px;
-    }
-    .intro {
-        width: 485px;
-        gap: 20px;
-    }
-    .calculator {
-        width: 771px;
-        gap: 100px;
-    }
-    .check {
-        width: 567px;
-        padding: 20px 50px;
-        gap: 10px;
-    }
-    .result {
-        width: 663px;
-        gap: 20px;
-    }
-    .action {
-        width: 570px;
-        gap: 12px;
-    }
-    main {
-        width: 771px;
-        gap: 120px;
-    }
-    footer {
-        width: 365px;
-        gap: 20px;
-    } }
+footer p {
+    width: 100%;
+    font-family: 'NotoSansKRRegular';
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
