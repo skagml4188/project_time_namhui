@@ -146,18 +146,20 @@ output {
 }
 /*action*/
 .action {
+    justify-content: flex-end;
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 9px;
 }
 #show {
-    width: 70%;
+    width: 280px;
     justify-content: flex-start;
     padding: 16px 24px;
     gap: 10px;
 }
 .share {
-    width: 30%;
+    width: 160px;
     justify-content: flex-end;
     padding: 16px 24px;
     gap: 10px;
