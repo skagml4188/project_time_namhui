@@ -62,18 +62,19 @@ main {
     font-size: 14px;
     gap: 60px;
 }
-.highlight {
-    width: 70%;
+.intro {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: absolute;
+}
+.highlight {
+    width: 320px;
+    align-items: center;
     filter: brightness(0) saturate(100%) invert(60%) sepia(94%) saturate(1000%) hue-rotate(360deg) brightness(100%) contrast(95%);
 }
 .info {
-    width: 90%;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
+    width: 300px;
     /*text*/
     font-size: 18px;
     text-align: center;
