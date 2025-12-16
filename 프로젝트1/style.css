@@ -190,6 +190,7 @@ footer p {
     vertical-align: middle;
     color: #FFFFFF;
 }
+/*modal*/
 #dialog {
     width: 400px;
     padding: 20px;
@@ -224,4 +225,112 @@ footer p {
     padding: 20px 50px;
     background-color: #FCEE21;
     color: #5B2386;
+}
+@media screen and (min-width: 993px) {
+.container {
+    width: 800px;
+    margin-top: 36px;
+    margin-left: 15px;
+    gap: 160px;
+}
+/*header*/
+header {
+    width: 570px;
+    background-size: 128px;
+}
+.title {
+    width: 570px;
+    margin-top: 70px;
+}
+.quote {
+    width: 100%;
+    margin-top: 300px;
+    font-size: 36px;
+}
+/*intro*/
+main {
+    width: 780px;
+    margin-top: 300px;
+    gap: 40px;
+    font-size: 14px;
+}
+.info {
+    width: 500px;
+    background-size: 450px;
+    /*text*/
+    font-size: 24px;
+}
+/*calculator*/
+.calculator {
+    gap: 100px;
+}
+.goal {
+    width: 520px;
+}
+.plan {
+    width: 770px;
+}
+input {
+    width: 228px;
+    height: 56px;
+    font-size: 24px;
+}
+.check {
+    width: 570px;
+}
+.click {
+    width: 64px;
+}
+output {
+    margin: 10px;
+    font-size: 72px;
+}
+/*action*/
+.action {
+    gap: 12px;
+}
+#show {
+    width: 368px;
+    padding: 15px 10px;
+}
+.share {
+    width: 200px;
+    padding: 15px 10px;
+}
+button {
+    font-size: 24px;
+}
+/*footer*/
+footer {
+    width: 368px;
+    gap: 20px;
+}
+.logo {
+    width: 168px;
+}
+footer p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+}
+/*modal*/
+#dialog {
+    width: 800px;
+    gap: 10px;
+
+}
+.text1 {
+    font-size: 96px;
+    font-weight: 400;
+}
+.text2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.character {
+    width: 438px;
+}
+#close {
+    width: 510px;
+}
 }
