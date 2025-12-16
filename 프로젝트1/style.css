@@ -257,10 +257,8 @@ main {
 .info {
     width: 500px;
     background-size: 450px;
-    /*text*/
     font-size: 24px;
 }
-/*calculator*/
 .calculator {
     gap: 100px;
 }
@@ -285,7 +283,6 @@ output {
     margin: 10px;
     font-size: 72px;
 }
-/*action*/
 .action {
     gap: 12px;
 }
@@ -300,7 +297,6 @@ output {
 button {
     font-size: 24px;
 }
-/*footer*/
 footer {
     width: 368px;
     gap: 20px;
@@ -313,7 +309,6 @@ footer p {
     font-size: 12px;
     line-height: 14px;
 }
-/*modal*/
 #dialog {
     width: 800px;
     gap: 10px;
