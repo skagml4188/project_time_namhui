@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
     <header>
         <h1 class="visually-hidden">1만 시간의 법칙</h1>
         <img class="title" src="./images/title.png" alt="1만 시간의 법칙">
-        <q class="quote">연습은 어제의 당신보다 당신을 더 낫게 만든다.</q>
+        <blockquote class="quote">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</blockquote>
     </header>
     <main>
         <section class="intro">
@@ -22,31 +21,33 @@
                 <dfn>1만 시간의 법칙</dfn>은 <br>어떤 분야의 전문가가 되기 위해서는 <br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
         </section>
-        <section class="calculator">
             <h2 class="visually-hidden">훈련 시간 계산기</h2>
+        <form class="calculator">
+            <fieldset>
             <h3 class="visually-hidden">목표 분야</h3><p>나는</p><label class="goal"><input type="text" id="user-occupation" name="user-occupation" placeholder="예 &#41; 프로그래밍">
             </label><p>전문가가 될 것이다.</p>
             <h3 class="visually-hidden">훈련 시간 계획</h3><div class="time"><p>그래서 앞으로 매일 하루에</p><label class="plan"><input type="number" id="time" name="time" placeholder="예 &#41; 5"></label><p>
             시간씩 훈련할 것이다.</p></div>
-        </section>
-        <section class="button"><h3 class="visually-hidden">결과 확인 버튼</h3><button class="check" type="button">나는 며칠 동안 훈련을 해야 <br>1만 시간이 될까?</button>
-            <img class="click" src="./images/click.png" alt="">
-        </section>
+        </fieldset></form>
+<section class="submit">
+        <h3 class="visually-hidden">결과 확인 버튼</h3><button class="check" type="button">나는 며칠 동안 훈련을 해야 <br>1만 시간이 될까?</button>
+        <img class="click" src="./images/click.png" alt="">
+</section>
         <section class="result">
             <h2 class="visually-hidden">계산 결과</h2>
-            <p>당신은 <output>프로그래밍</output> 전문가가 되기 위해서<br>
-                대략 <output>5110</output>일 이상 훈련하셔야 합니다! &#58;&#41;</p>
+            <p>당신은 <output for="text">프로그래밍</output> 전문가가 되기 위해서<br>
+                대략 <output for="result">5110</output>일 이상 훈련하셔야 합니다! &#58;&#41;</p>
         </section>
         <section class="action">
             <h2 class="visually-hidden">추가 기능</h2>
-            <button id="show">훈련하러 가기 GO! GO!</button>
-            <dialog class="visually-hidden" id="dialog">
+            <button id="dialog-open">훈련하러 가기 GO! GO!</button>
+            <dialog id="dialog">
                 <div class="text">
                     <p class="text1">화이팅!!</p>
                     <p class="text2">당신의 꿈을 응원합니다!</p>
             </div>
                 <img class="character" src="./images/licat.png" alt="라이캣 캐릭터">
-                <button id="close">종료하고 진짜 <br>
+                <button id="dialog-close">종료하고 진짜 <br>
                     훈련하러 가기 GO!GO!</button>
             </dialog>
             <button class="share" type="button">공유하기</button>
@@ -57,6 +58,5 @@
 <p>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
     </footer>
-    </div>
   </body>
 </html>
